@@ -1,0 +1,28 @@
+<div>
+Name: <input type="text" ng-model="user.name" placeholder="enter name"> <br>
+<br>
+Gender : <select ng-model="user.gender" placeholder = "enter your gender">
+	<option ng-value="male">Male</option>
+	<option ng-value="female">Female</option>
+	<option ng-value="others">Others</option>
+</select> <br>
+<br>
+Age : <input type="text" ng-model="user.age" placeholder="enter age"> <br>
+<br>
+<h4>Current Health:</h4>
+<input type="checkbox" ng-click="curentHealth('Hypertension')">Hypertension <br>
+<input type="checkbox" ng-click="curentHealth('Blood Pressure')">Blood Pressure <br>
+<input type="checkbox" ng-click="curentHealth('Blood sugar')">Blood sugar<br>
+<input type="checkbox" ng-click="curentHealth('Overweight')">Overweight <br>
+<br>
+<h4>Habits:</h4>
+<input type="checkbox" ng-click="habits('Smoking')">Smoking<br>
+<input type="checkbox" ng-click="habits('Alcohol')">Alcohol<br>
+<input type="checkbox" ng-click="habits('Daily Exercise')">Daily Exercise<br>
+<input type="checkbox" ng-click="habits('Drugs')">Drugs<br>
+<br>
+<input type="submit" ng-click="submit()"><br>
+<br>
+<div ng-show="user.premium !== 0">
+<h3> Health Insurance Premium for Mr. {{user.name}}: {{user.premium}} </h3></div>
+</div>
