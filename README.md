@@ -1,16 +1,15 @@
-# premiumGenerator
+## Premium Generator
 
 Tech stack: 
-> AngularJs
-> Spring Boot 
+> AngularJs + Spring Boot 
 
 This is a sample application that i built  when asked in an interview.
 
-THE PROBLEM
+# PROBLEM STATEMENT :
 Narayan is looking for a health insurance quote using this application.
 
 INPUT:
-Name: Norman Gomes
+Name: Narayan
 Gender: Male
 Age: 34 years
 Current health:
@@ -31,12 +30,14 @@ Drugs: No
 OUTPUT :
 Health Insurance Premium for Mr. Narayan : Rs. 5666.1
 
-BUSINESS RULES :
+# BUSINESS RULES :
 Base premium for anyone below the age of 18 years = Rs. 5,000
 % increase based on age: 18-40 -> +10% | 40+ -> 20%
-Gender rule: Male vs female vs Other % -> Increase 2% over standard slab for Males
-Pre-existing conditions (Hypertension | Blook pressure | Blood sugar | Overweight) -> Increase of 1% per condition
+# Gender rule:
+Male vs female vs Other % -> Increase 2% over standard slab for Males
+# Pre-existing conditions :
+(Hypertension | Blook pressure | Blood sugar | Overweight) -> Increase of 1% per condition
 
-Habits
+# Habits
 Good habits (Daily exercise) -> Reduce 3% for every good habit
 Bad habits (Smoking | Consumption of alcohol | Drugs) -> Increase 3% for every bad habit
